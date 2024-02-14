@@ -1,7 +1,7 @@
 /* RESET */
 
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -12,11 +12,64 @@ ul{
 
 body{
     font-family: Arial, sans-serif;
+    background-color: var();
 
 }
 
-/* general */
 :root {
+	--color-primary-color: #000000;
+	--color-toolbar1-color: #222222;
+	--color-toolbar2-color: #4a4a4a;
+	--color-secondary-color: #ffffff;
+	--color-end-color: #ff0000;
+	--color-share-color: #4bc800;
+}
+
+#app{
+    height: 100vh;
+    background-color: var(--color-end-color);
+}
+
+#header{
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#content{
+    padding: 150px 0 70px 0;
+    max-width: 1200px;
+    height: calc(100% / 7 - 10px);
+    overflow-y: auto;
+}
+
+.web{
+    display: block;
+}
+
+#toolbar{
+
+}
+
+#user{
+    margin:0;
+}
+
+/* utility flex */
+
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+/* :root {
 	--color-header: #ff6900;
 	--color-primary: #1a1a1a;
 	--color-secondary: #ffffff;
@@ -36,7 +89,6 @@ main{
     overflow-y: auto;
 }
 
-/* utility flex */
 .d-flex{
     display: flex;
 }
@@ -66,4 +118,4 @@ main{
 }
 img{
     object-fit: contain;
-}
+} */
